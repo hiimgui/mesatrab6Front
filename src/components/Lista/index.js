@@ -1,12 +1,12 @@
 import Li from "../ListaDentro/index";
-const Lista = ({ titulo, nome, trazer }) => {
+const Lista = ({ titulo, nome, trazer, estaNaLista }) => {
   return (
     <>
       <h3>{titulo[0]}</h3>
       <div>
         <ul>
           <Li nome={nome[0]}>esta convidado para a festa</Li>
-          <Li nome={nome[1]}>esta convidado para a festa</Li>
+          <Li nome={nome[1]}> nao esta convidado para a festa</Li>
           <Li nome={nome[2]}>esta convidado para a festa</Li>
         </ul>
       </div>
